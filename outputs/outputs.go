@@ -54,6 +54,7 @@ const (
 	RedisOutput
 	ElasticsearchOutput
 	FileOutput
+        RabbitmqOutput
 )
 
 // Output names
@@ -62,6 +63,7 @@ var OutputNames = []string{
 	"redis",
 	"elasticsearch",
 	"file",
+        "rabbitmq",
 }
 
 func (o OutputPlugin) String() string {
